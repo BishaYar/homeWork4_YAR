@@ -35,16 +35,14 @@ public class Main {
 
         if (ageMan >= 2 && ageMan <= 6) {
             System.out.println("Если возраст человека равен " + ageMan + ", то ему нужно ходить в детский сад.");
+        }
+        if (ageMan >= 7 && ageMan <= 17) {
+            System.out.println("Если возраст человека равен " + ageMan + ", то ему нужно ходить в школу.");
+        }
+        if (ageMan >= 18 && ageMan <= 24) {
+            System.out.println("Если возраст человека равен " + ageMan + ", то его место в университете.");
         } else {
-            if (ageMan >= 7 && ageMan <= 17) {
-                System.out.println("Если возраст человека равен " + ageMan + ", то ему нужно ходить в школу.");
-            } else {
-                if (ageMan >= 18 && ageMan <= 24) {
-                    System.out.println("Если возраст человека равен " + ageMan + ", то его место в университете.");
-                } else {
-                    System.out.println("Если возраст человека равен " + ageMan + ", то ему пора ходить на работу.");
-                }
-            }
+            System.out.println("Если возраст человека равен " + ageMan + ", то ему пора ходить на работу.");
         }
 
         System.out.println("Task 5");
@@ -52,14 +50,11 @@ public class Main {
 
         if (ageChild < 5) {
             System.out.println("Если возраст ребенка равен " + ageChild + ", то он не может кататься на аттракционе.");
+        }
+        if (ageChild >= 5 && ageChild < 14) {
+            System.out.println("Если возраст ребенка равен " + ageChild + ", то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
         } else {
-            if (ageChild >= 5 && ageChild < 14) {
-                System.out.println("Если возраст ребенка равен " + ageChild + ", то он может кататься только в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
-            } else {
-                if (ageChild > 14) {
-                    System.out.println("Если возраст ребенка равен " + ageChild + ", то он может кататься без сопровождения взрослого.");
-                }
-            }
+            System.out.println("Если возраст ребенка равен " + ageChild + ", то он может кататься без сопровождения взрослого.");
         }
 
         System.out.println("Task 6");
@@ -69,31 +64,23 @@ public class Main {
 
         if (countMan > countPlaceAll) {
             System.out.println("В вагоне мест больше нет.");
+        }
+        if (countMan > countPlaceSeat) {
+            System.out.println("В вагоне остались только стоячие места.");
         } else {
-            if (countMan > countPlaceSeat) {
-                System.out.println("В вагоне остались только стоячие места.");
-            } else {
-                System.out.println("В вагоне еще есть сидячие места.");
-            }
+            System.out.println("В вагоне еще есть сидячие места.");
         }
 
         System.out.println("Task 7");
-        int one = 25;
-        int two = 14;
+        int one = 57;
+        int two = 7;
         int three = 55;
 
-        if (one < two) {
-            if (two < three) {
-                System.out.println("Большее число " + three);
-            } else {
-                System.out.println("Большее число " + two);
-            }
-        } else {
-            if (one < three) {
-                System.out.println("Большее число " + three);
-            } else {
-                System.out.println("Большее число " + one);
-            }
-        }
+        if (one > two && one > three)
+            System.out.println("Большее число " + one);
+        if (two > one && two > three)
+            System.out.println("Большее число " + two);
+        if (three > one && three > two)
+            System.out.println("Большее число " + three);
     }
 }
